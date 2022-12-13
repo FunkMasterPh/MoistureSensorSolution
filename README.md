@@ -5,7 +5,7 @@ I wanted to take better care of the flowers I have in my home, so I decided to b
 
 ## About
 
-This repository is the base for two other repositories that togheter holds all the code needed to replicate this solution.
+This repository is the base for two other repositories that together holds all the code needed to replicate this solution.
 
 #### Code for the ESP32:
 https://github.com/FunkMasterPh/MoistureSensorSolutionEsp32
