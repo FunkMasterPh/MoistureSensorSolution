@@ -42,3 +42,5 @@ The Azure Function takes the HTTP response and saves it to a container in the Az
 
 ## Get Started
 To get started create an Azure account and setup each component listed in the [about](#About) section.
+
+Then clone both the repositories also listed in the [about](#About) section and follow their instructions.
