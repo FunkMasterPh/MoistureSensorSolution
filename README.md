@@ -22,7 +22,7 @@ This solution also requires Power BI and an active Azure account with these comp
 I also use Postman to trigger the Azure Function.
 
 ## Architecture
-![Architecture](SolutionOverview.png "Solution Architecture")
+![Architecture](images/SolutionOverview.png "Solution Architecture")
 
 The solution is built with two different paths, one warm and one cold.
 
@@ -30,7 +30,7 @@ The solution is built with two different paths, one warm and one cold.
 
 The warm path collects sensor data from the moisture sensor and using the [Azure IoT SDK for C Arduino](https://github.com/Azure/azure-sdk-for-c-arduino) sends the data to the IoT Hub. The IoT Hub routes the data to Cosmos DB and with Power BI I can fetch and display the data as below:
 
-![MoistureData](MoistureVisualization "Visualization of moisture data")
+![MoistureData](images/MoistureVisualization "Visualization of moisture data")
 
 ### Cold
 
@@ -38,9 +38,11 @@ The cold path uses an Azure Function to make a HTTP request to SMHI:s API to get
 
 The Azure Function takes the HTTP response and saves it to a container in the Azure Storage Account. Then when needed I can fetch it from Power BI and display it as below:
 
-![SMHIData](SMHIVisualization "Visualization of SMHI data")
+![SMHIData](images/SMHIVisualization "Visualization of SMHI data")
 
 ## Get Started
 To get started create an Azure account and setup each component listed in the [about](#About) section.
 
 Then clone both the repositories also listed in the [about](#About) section and follow their instructions.
+
+When everything from those repositories are set up you can open Power BI and choose your Cosmos DB or your Storage Account as a source and visualize your data.
