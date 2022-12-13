@@ -39,3 +39,6 @@ The cold path uses an Azure Function to make a HTTP request to SMHI:s API to get
 The Azure Function takes the HTTP response and saves it to a container in the Azure Storage Account. Then when needed I can fetch it from Power BI and display it as below:
 
 ![SMHIData](SMHIVisualization "Visualization of SMHI data")
+
+## Get Started
+To get started create an Azure account and setup each component listed in the [about](#About) section.
